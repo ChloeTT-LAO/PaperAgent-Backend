@@ -47,7 +47,7 @@ class VizGeneratorAgent:
             return self._create_template_chart(query_plan, analyzed_data)
 
         except Exception as e:
-            print(f"❌ Error generating visualization: {e}")
+            print(f"Error generating visualization: {e}")
             return self._create_template_chart(query_plan, analyzed_data)
 
     def _create_template_chart(self,
